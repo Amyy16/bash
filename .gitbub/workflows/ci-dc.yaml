@@ -1,0 +1,18 @@
+name: Hello world job
+
+on:
+  push:
+    branches:
+      - main
+jobs:
+  hello-world:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo Hello World
+        run: echo "Hello world"
+        
+  greeting:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Greet the user
+        run: echo "Good day fom Github Actions"
